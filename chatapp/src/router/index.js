@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router"
 import Chat from "../components/Chat.vue"
-import Login from "../components/Login.vue"
+import EnterPage from "../components/pages/EnterPage.vue"
 
 const router = createRouter({
   history: createWebHistory(),
@@ -8,8 +8,9 @@ const router = createRouter({
     {
       path: "/",
       name: "login",
-      component: Login
-    },{
+      component: EnterPage
+    },
+    {
       path: "/chat/",
       name: "chat",
       component: Chat,
